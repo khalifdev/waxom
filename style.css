@@ -475,6 +475,13 @@ header .carousel_ind .active {
 #presentation .presentation_txt p {
   color: #fff;
 }
+#presentation .presentation_txt #size {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
 #presentation .presentation_txt #play_button {
   display: block;
   border: none;
