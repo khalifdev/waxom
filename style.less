@@ -470,6 +470,7 @@ header {
     video {
         width: 100%;
         height: 100%;
+        object-fit: fill;
     }
     .presentation_txt {
         margin: -400px auto 0;
@@ -502,6 +503,33 @@ header {
         #play_button:hover {
             cursor: pointer;
         }
+    }
+}
+
+#mobile_devices {
+    background-color: #fbfaf8;
+    height: 695px;
+    img {
+        float: left;
+        margin: 39px 30px 0;
+    }
+    .mobdev_desc {
+        transform: translateY(50%);
+        overflow: hidden;
+    }
+    h4,
+    p,
+    ul {
+        text-align: left;
+    }
+    li {
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px;
+        list-style-image: url(icons/li_marker.png);
+        margin-left: 50px;
     }
 }
 
