@@ -32,6 +32,10 @@ body {
     }
 }
 
+.logoref {
+    text-decoration: none !important;
+}
+
 .container {
     height: inherit;
     max-width: 1170px;
@@ -950,6 +954,10 @@ header {
 }
 
 footer {
+    .outref {
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+    }
     .info {
         background-color: #191919;
         height: 508px;
@@ -957,6 +965,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             text-align: left;
+            gap: 25px;
             .column1 > p {
                 color: #545454;
                 font-size: 14px;
@@ -974,10 +983,85 @@ footer {
                 /* Приближение из-за подстановки шрифтов */
                 text-align: left;
                 i {
-                        font-size: 12px;
-                        padding-left: 5px;
-                    }
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
             }
+            h5 {
+                font-family: Raleway;
+                color: #ffffff;
+                font-size: 24px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 700;
+            }
+            span {
+                font-family: Montserrat;
+                color: #363636;
+                font-size: 12px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 20px;
+            }
+            hr {
+                background-color: #252525;
+                height: 2px;
+            }
+            b {
+                color: #00bff3;
+                font-weight: 300;
+            }
+            .column2 p,
+            .column3 p {
+                margin-bottom: 10px;
+                color: #545454 !important;
+                font-size: 14px;
+                line-height: 24px;
+                line-height: 20px;
+            }
+            .column2 a:not(.outref) {
+                display: block;
+                text-decoration: none;
+            }
+            .column2 a:hover p {
+                color: #c7b299 !important;
+            }
+            .column2 a:hover span {
+                color: #fff;
+            }
+            .pictures {
+                display: grid;
+                grid-template-columns: 130px 130px;
+                grid-template-rows: 98px 98px;
+                gap: 10px;
+            }
+        }
+    }
+    .copyright {
+        height: 111px;
+        background-color: #111;
+        font-family: Montserrat;
+        font-size: 13px;
+        a:not(.outref) {
+            font-weight: 13px;
+            color: #545454;
+            text-decoration: none;
+        }
+        a:not(.outref):hover {
+            color: #c7b299;
+        }
+        .left {
+            float: left;
+            color: #545454;
+        }
+        span {
+            padding-left: 20px;
+        }
+        .left:nth-child(1) {
+            padding-left: 0;
+        }
+        .right {
+            color: #545454;
+            float: right;
         }
     }
 }

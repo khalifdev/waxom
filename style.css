@@ -29,6 +29,9 @@ body {
   color: #fff;
   line-height: 56px;
 }
+.logoref {
+  text-decoration: none !important;
+}
 .container {
   height: inherit;
   max-width: 1170px;
@@ -906,6 +909,10 @@ header .carousel_ind .active {
   justify-content: space-between;
   align-items: center;
 }
+footer .outref {
+  text-decoration: none;
+  color: #969696;
+}
 footer .info {
   background-color: #191919;
   height: 508px;
@@ -914,6 +921,7 @@ footer .info .footer_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: left;
+  gap: 25px;
 }
 footer .info .footer_grid .column1 > p {
   color: #545454;
@@ -935,4 +943,79 @@ footer .info .footer_grid .column1 > a {
 footer .info .footer_grid .column1 > a i {
   font-size: 12px;
   padding-left: 5px;
+}
+footer .info .footer_grid h5 {
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+}
+footer .info .footer_grid span {
+  font-family: Montserrat;
+  color: #363636;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 20px;
+}
+footer .info .footer_grid hr {
+  background-color: #252525;
+  height: 2px;
+}
+footer .info .footer_grid b {
+  color: #00bff3;
+  font-weight: 300;
+}
+footer .info .footer_grid .column2 p,
+footer .info .footer_grid .column3 p {
+  margin-bottom: 10px;
+  color: #545454 !important;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 20px;
+}
+footer .info .footer_grid .column2 a:not(.outref) {
+  display: block;
+  text-decoration: none;
+}
+footer .info .footer_grid .column2 a:hover p {
+  color: #c7b299 !important;
+}
+footer .info .footer_grid .column2 a:hover span {
+  color: #fff;
+}
+footer .info .footer_grid .pictures {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-template-rows: 98px 98px;
+  gap: 10px;
+}
+footer .copyright {
+  height: 111px;
+  background-color: #111;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+footer .copyright a:not(.outref) {
+  font-weight: 13px;
+  color: #545454;
+  text-decoration: none;
+}
+footer .copyright a:not(.outref):hover {
+  color: #c7b299;
+}
+footer .copyright .left {
+  float: left;
+  color: #545454;
+}
+footer .copyright span {
+  padding-left: 20px;
+}
+footer .copyright .left:nth-child(1) {
+  padding-left: 0;
+}
+footer .copyright .right {
+  color: #545454;
+  float: right;
 }
