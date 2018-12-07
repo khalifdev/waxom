@@ -7,7 +7,7 @@
 }
 
 body {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -89,42 +89,149 @@ header {
             max-width: 1170px;
         }
     }
-    .menu li {
+    .menu__icon {
+        display: none;
+        width: 45px;
+        height: 35px;
+        position: relative;
+        cursor: pointer;
+    }
+    .menu__icon span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    .menu__icon span:nth-child(1) {
+        top: 0px;
+    }
+    .menu__icon span:nth-child(2),
+    .menu__icon span:nth-child(3) {
+        top: 13px;
+    }
+    .menu__icon span:nth-child(4) {
+        top: 26px;
+    }
+    .menu__links-item {
         display: inline-block;
-    }
-    .menu li a {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 300;
         color: #fff;
+        font-family: Montserrat;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0 10px;
         text-decoration: none;
-        margin-right: 30px;
+        cursor: pointer;
     }
-    .menu li a:hover {
+    .menu__links-item:hover {
         color: #c7b29a;
     }
-    #cart {
+    .menu.menu_state_open .menu__icon span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .menu.menu_state_open .menu__icon span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    .menu.menu_state_open .menu__icon span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    .menu.menu_state_open .menu__icon span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .menu.menu_state_open .menu__links {
         display: block;
+    }
+    @media screen and (max-width: 992px) {
+        .navbar > .menu .menu__icon {
+            order: 0;
+        }
+        .navbar > a {
+            order: 1;
+        }
+        .cart_search {
+            order: 2;
+        }
+        .menu__icon {
+            display: inline-block;
+        }
+        .menu__links {
+            position: fixed;
+            display: none;
+            top: -15px;
+            left: 80px;
+            margin-top: 52px;
+            //    background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            overflow: auto;
+        }
+        .menu__links-item {
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .nav p {
+            display: none;
+        }
+        .nav #cart {
+            display: none;
+        }
+        .nav .logo {
+            width: 64px;
+        }
+        .slide-caption h3 {
+            display: none;
+        }
+        .slide-caption {
+            max-width: 320px;
+        }
+    }
+    //    .menu li {
+    //        display: inline-block;
+    //    }
+    //    .menu li a {
+    //        font-family: Montserrat;
+    //        font-size: 14px;
+    //        font-weight: 300;
+    //        color: #fff;
+    //        text-decoration: none;
+    //        margin-right: 30px;
+    //    }
+    //    .menu li a:hover {
+    //        color: #c7b29a;
+    //    }
+    #cart {
+        display: inline-block;
         width: 18px;
         height: 24px;
         background: url(icons/icon-cart.png);
-        margin-top: -10px;
+        margin: 0 20px;
     }
     #search {
-        display: block;
+        display: inline-block;
         width: 24px;
         height: 24px;
         background: url(icons/icon-search.png);
-        margin-top: -10px;
-        margin-left: -10px;
     }
     .slide {
         height: 1024px;
         background: url(img/slide_bg_1.jpg);
         .slide-caption {
             color: #fff;
-            width: 590px;
-            margin: 35% auto 0;
+            max-width: 590px;
+            margin: 400px auto;
             h2 {
                 font-family: Raleway;
                 font-size: 52px;
