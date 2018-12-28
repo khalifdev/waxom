@@ -50,25 +50,30 @@ function playPauseClick() {
         setInterval(status, 1000);
     }
 }
+
 $(document).ready(function () {
     initiate();
+    /**
+ * Функция вызывается при нажатии на кнопку right_btn под постами
+ */
     right_btn.onclick = (function () {
         $('.post' + n).removeClass('hov hov'+n);
         if (n == 3) n = 1;
         else n++;
         $('.post' + n).addClass('hov hov'+n);
     });
+        /**
+ * Функция вызывается при нажатии на кнопку left_btn под постами
+ */
     left_btn.onclick = (function () {
         $('.post' + n).removeClass('hov hov'+n);
         if (n == 1) n = 3;
         else n--;
         $('.post' + n).addClass('hov hov'+n);
     });
-    $('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
+    /**
+ * Функция для меню (бургер) - скопировал из другого проекта
+ */   
     (function($){
       $(function() {
         $('.menu__icon').on('click', function() {
