@@ -1,0 +1,93 @@
+@media screen and (max-width: 992px) {
+    header .slide {
+        height: 100vh;
+    }
+    .navbar > .menu .menu__icon {
+        order: 0;
+    }
+    .navbar > a {
+        order: 1;
+    }
+    .cart_search {
+        order: 2;
+    }
+    header .menu__icon {
+        display: inline-block;
+    }
+    .menu__links {
+        position: fixed;
+        display: none;
+        top: -15px;
+        left: 55px;
+        margin-top: 52px;
+        //    background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        overflow: auto;
+    }
+    .menu__links-item {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;
+    }
+    header .slide .slide-caption {
+        max-width: 80%;
+        margin: 35vh auto;
+    }
+    #services .grid-columns {
+        grid-template-columns: repeat(2, 1fr);
+        hr {
+            width: 30%;
+        }
+    }
+    #ideas .ideas_scrins {
+        max-width: 770px;
+        height: 860px;
+        #left_browser {
+            top: 0;
+        }
+        #center_browser {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #right_browser:hover,
+        #left_browser:hover {
+            //transform: translateY(0) scale(1.1);
+        }
+        #center_browser:hover {
+            //transform: translate(-50%, -50%) scale(1.1);
+        }
+        //        img:hover {
+        //            transform: translateY(0) scale(1.1);
+        //        
+        //    }
+    }
+    #mobile_devices img {
+        float: none;
+    }
+    #mobile_devices .mobdev_desc {
+        transform: none;
+        margin: 30px 30px 0;
+        h4 {
+            text-align: center;
+        }
+    }
+    #stat {
+        height: fit-content;
+    }
+    #stat .grid-columns {
+        padding-top: 20px;
+        //grid-gap: 30px;
+    }
+    #stat .grid-columns span {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    #stat .grid-columns hr {
+        display: none;
+    }
+    footer .info .footer_grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px;
+    }
+}

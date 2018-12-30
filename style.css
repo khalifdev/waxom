@@ -609,7 +609,8 @@ header .carousel_ind .active {
   visibility: hidden;
   position: absolute;
   top: 115px;
-  left: 145px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #latest_projects .projects_grid .project .ctrl_icons i {
   font-size: 25px;
@@ -671,6 +672,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj11:hover {
   background: #2f2f2f url(img/photo11.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .projects_grid .proj12 {
@@ -679,6 +681,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj12:hover {
   background: #2f2f2f url(img/photo12.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .projects_grid .proj13 {
@@ -687,6 +690,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj13:hover {
   background: #2f2f2f url(img/photo13.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .projects_grid .proj21 {
@@ -695,6 +699,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj21:hover {
   background: #2f2f2f url(img/photo21.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .projects_grid .proj22 {
@@ -703,6 +708,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj22:hover {
   background: #2f2f2f url(img/photo22.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .projects_grid .proj23 {
@@ -711,6 +717,7 @@ header .carousel_ind .active {
 }
 #latest_projects .projects_grid .proj23:hover {
   background: #2f2f2f url(img/photo23.jpg) no-repeat;
+  background-position-x: center;
   background-blend-mode: overlay;
 }
 #latest_projects .button {
@@ -967,12 +974,17 @@ header .carousel_ind .active {
 }
 #brands {
   min-height: 489px;
-  background: url(img/brands_bg.jpg);
+  background: url(img/brands_bg.jpg) no-repeat;
+  background-size: cover;
 }
 #brands .container {
+  padding: 100px 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#brands .container a {
+  padding-top: 20px;
 }
 footer .outref {
   text-decoration: none;
@@ -1220,6 +1232,9 @@ footer .copyright .right {
   }
   #latest_projects .projects_grid {
     grid-template-columns: repeat(1, 370px);
+  }
+  #mobile_devices li {
+    margin-left: 20px;
   }
   #stat .grid-columns span {
     font-size: 28px;

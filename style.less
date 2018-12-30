@@ -649,7 +649,8 @@ header {
                 visibility: hidden;
                 position: absolute;
                 top: 115px;
-                left: 145px;
+                left: 50%;
+                transform: translateX(-50%);
                 i {
                     font-size: 25px;
                     color: #fff;
@@ -712,6 +713,7 @@ header {
         }
         .proj11:hover {
             background: #2f2f2f url(img/photo11.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
         .proj12 {
@@ -720,6 +722,7 @@ header {
         }
         .proj12:hover {
             background: #2f2f2f url(img/photo12.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
         .proj13 {
@@ -728,6 +731,7 @@ header {
         }
         .proj13:hover {
             background: #2f2f2f url(img/photo13.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
         .proj21 {
@@ -736,6 +740,7 @@ header {
         }
         .proj21:hover {
             background: #2f2f2f url(img/photo21.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
         .proj22 {
@@ -744,6 +749,7 @@ header {
         }
         .proj22:hover {
             background: #2f2f2f url(img/photo22.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
         .proj23 {
@@ -752,6 +758,7 @@ header {
         }
         .proj23:hover {
             background: #2f2f2f url(img/photo23.jpg) no-repeat;
+            background-position-x: center;
             background-blend-mode: overlay;
         }
     }
@@ -843,9 +850,9 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-//        display: grid;
-//        grid-template-columns: repeat(5, 1fr);
-//        grid-gap: 70px;
+        //        display: grid;
+        //        grid-template-columns: repeat(5, 1fr);
+        //        grid-gap: 70px;
         .column {
             text-align: center;
         }
@@ -1023,11 +1030,16 @@ header {
 
 #brands {
     min-height: 489px;
-    background: url(img/brands_bg.jpg);
+    background: url(img/brands_bg.jpg) no-repeat;
+    background-size: cover;
     .container {
+        padding: 100px 20px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a {
+            padding-top: 20px;
+        }
     }
 }
 
