@@ -21,7 +21,6 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  padding: 0 15px;
 }
 .logo {
   width: 185px;
@@ -36,7 +35,6 @@ p {
   text-align: right;
   color: #fff;
   line-height: 56px;
-  padding: 0;
 }
 .logoref {
   text-decoration: none !important;
@@ -237,6 +235,9 @@ header .carousel_ind .active {
   font-size: 22px;
   font-weight: 600;
   margin: 29px 0 19px;
+}
+#services .grid-columns p {
+  padding: 0 15px;
 }
 #services .grid-columns p::after {
   content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.';
@@ -490,6 +491,7 @@ header .carousel_ind .active {
   max-width: 770px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 15px;
 }
 #ideas .ideas_scrins {
   margin: 0 auto;
@@ -549,7 +551,6 @@ header .carousel_ind .active {
   color: #615855;
   font-size: 18px;
   font-weight: 300;
-  padding: 0;
 }
 #wp_theme .button {
   margin-top: 8px;
@@ -561,7 +562,7 @@ header .carousel_ind .active {
 #latest_projects .latest_proj_caption {
   max-width: 757px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 15px 0;
 }
 #latest_projects .latest_proj_caption .projects_filter {
   padding-left: 0;
@@ -644,7 +645,6 @@ header .carousel_ind .active {
   font-weight: 300;
   line-height: 20px;
   text-align: left;
-  padding: 0;
 }
 #latest_projects .projects_grid .project .project_txt .angle {
   width: 20px;
@@ -783,9 +783,6 @@ header .carousel_ind .active {
 #mobile_devices ul {
   text-align: left;
 }
-#mobile_devices h4 {
-  padding-left: 15px;
-}
 #mobile_devices li {
   font-family: Montserrat;
   color: #8c8c8c;
@@ -798,7 +795,7 @@ header .carousel_ind .active {
 #stat {
   height: 300px;
 }
-#stat .grid-columns {
+#stat .flex-columns {
   max-width: 1030px;
   margin: 0 auto;
   padding-top: 70px;
@@ -806,10 +803,11 @@ header .carousel_ind .active {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#stat .grid-columns .column {
+#stat .flex-columns .column {
   text-align: center;
+  padding: 0 15px;
 }
-#stat .grid-columns span {
+#stat .flex-columns span {
   display: block;
   font-family: Montserrat;
   color: #ffffff;
@@ -820,7 +818,7 @@ header .carousel_ind .active {
   margin-bottom: 20px;
   margin-top: 30px;
 }
-#stat .grid-columns p {
+#stat .flex-columns p {
   font-family: Montserrat;
   color: #c7b299;
   font-size: 14px;
@@ -829,7 +827,7 @@ header .carousel_ind .active {
   text-align: center;
   margin-bottom: 30px;
 }
-#stat .grid-columns hr {
+#stat .flex-columns hr {
   background-color: #fff;
   width: 30px;
   height: 1px;
@@ -840,7 +838,7 @@ header .carousel_ind .active {
 #recent_posts .posts_caption {
   max-width: 757px;
   margin: 0 auto 40px;
-  padding-top: 40px;
+  padding: 40px 15px 0;
 }
 #recent_posts .posts_grid {
   display: grid;
@@ -980,11 +978,15 @@ header .carousel_ind .active {
 #brands .container {
   padding: 100px 20px 20px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 #brands .container a {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+#brands .container a:last-child {
+  padding-bottom: 30px;
 }
 footer .outref {
   text-decoration: none;
@@ -1102,7 +1104,8 @@ footer .copyright .right {
     padding-right: 30px;
   }
   #latest_projects .projects_grid {
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 370px);
+    width: fit-content;
   }
   #recent_posts .posts_grid {
     grid-template-columns: repeat(auto-fit, 370px);
@@ -1111,10 +1114,6 @@ footer .copyright .right {
   }
 }
 @media screen and (max-width: 1024px) {
-  #latest_projects .projects_grid {
-    grid-template-columns: repeat(2, 370px);
-    width: fit-content;
-  }
   #latest_projects .button {
     margin-bottom: 20px;
   }
@@ -1184,14 +1183,14 @@ footer .copyright .right {
   #stat {
     height: fit-content;
   }
-  #stat .grid-columns {
+  #stat .flex-columns {
     padding-top: 20px;
   }
-  #stat .grid-columns span {
+  #stat .flex-columns span {
     margin-bottom: 10px;
     margin-top: 15px;
   }
-  #stat .grid-columns hr {
+  #stat .flex-columns hr {
     display: none;
   }
   footer .info .footer_grid {
@@ -1236,19 +1235,9 @@ footer .copyright .right {
   #mobile_devices li {
     margin-left: 20px;
   }
-  #stat .grid-columns span {
-    font-size: 28px;
-  }
-  #stat .grid-columns p {
-    font-size: 10px;
-  }
   #recent_posts .posts_grid {
     max-width: 370px;
     margin-bottom: 20px;
-  }
-  #brands .container {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
   }
   footer .info .footer_grid {
     grid-template-columns: 1fr;
@@ -1282,6 +1271,10 @@ footer .copyright .right {
   }
   footer .copyright .right {
     float: left;
+  }
+  .right:first-child {
+    padding: 0;
+    clear: both;
   }
   #latest_projects .projects_grid .project,
   #latest_projects .projects_grid .project .project_txt {

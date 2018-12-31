@@ -23,7 +23,6 @@ p {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    padding: 0 15px;
 }
 
 .logo {
@@ -38,7 +37,6 @@ p {
         text-align: right;
         color: #fff;
         line-height: 56px;
-        padding: 0;
     }
 }
 
@@ -259,6 +257,9 @@ header {
             font-size: 22px;
             font-weight: 600;
             margin: 29px 0 19px;
+        }
+        p {
+            padding: 0 15px;
         }
         p::after {
             content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.';
@@ -524,12 +525,12 @@ header {
         max-width: 770px;
         margin: 0 auto;
         text-align: center;
+        padding: 0 15px;
     }
     .ideas_scrins {
         margin: 0 auto;
         position: relative;
         max-width: 1229px;
-        //        width: 64%;
         min-height: 482px;
         img {
             position: absolute;
@@ -544,14 +545,10 @@ header {
         }
         #right_browser:hover,
         #left_browser:hover {
-            //transform: translateY(-60px) scale(1.3);
             z-index: 3;
-            //transition-duration: 0.5s;
             cursor: pointer;
         }
         #center_browser:hover {
-            //transform: translateX(-50%) scale(1.05);
-            //transition-duration: 0.5s;
             cursor: pointer;
         }
         #right_browser:hover #center_browser {
@@ -590,7 +587,6 @@ header {
         color: #615855;
         font-size: 18px;
         font-weight: 300;
-        padding: 0;
     }
     .button {
         margin-top: 8px;
@@ -603,7 +599,7 @@ header {
     .latest_proj_caption {
         max-width: 757px;
         margin: 0 auto;
-        padding-top: 40px;
+        padding: 40px 15px 0;
         .projects_filter {
             padding-left: 0;
         }
@@ -683,7 +679,6 @@ header {
                     font-weight: 300;
                     line-height: 20px;
                     text-align: left;
-                    padding: 0;
                 }
                 .angle {
                     width: 20px;
@@ -827,9 +822,6 @@ header {
     ul {
         text-align: left;
     }
-    h4 {
-        padding-left: 15px;
-    }
     li {
         font-family: Montserrat;
         color: #8c8c8c;
@@ -843,18 +835,16 @@ header {
 
 #stat {
     height: 300px;
-    .grid-columns {
+    .flex-columns {
         max-width: 1030px;
         margin: 0 auto;
         padding-top: 70px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        //        display: grid;
-        //        grid-template-columns: repeat(5, 1fr);
-        //        grid-gap: 70px;
         .column {
             text-align: center;
+            padding: 0 15px;
         }
         span {
             display: block;
@@ -889,7 +879,7 @@ header {
     .posts_caption {
         max-width: 757px;
         margin: 0 auto 40px;
-        padding-top: 40px;
+        padding: 40px 15px 0;
     }
     .posts_grid {
         display: grid;
@@ -899,9 +889,6 @@ header {
         .post {
             min-height: 220px;
             position: relative;
-            //            .multiple-items {
-            //                position: absolute;
-            //            }
             .DD {
                 display: block;
                 position: inherit;
@@ -1035,10 +1022,14 @@ header {
     .container {
         padding: 100px 20px 20px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
         a {
-            padding-top: 20px;
+            padding-top: 30px;
+        }
+        a:last-child {
+            padding-bottom: 30px;
         }
     }
 }
@@ -1162,7 +1153,8 @@ footer {
         padding-right: 30px;
     }
     #latest_projects .projects_grid {
-        grid-gap: 10px;
+        grid-template-columns: repeat(2, 370px);
+        width: fit-content;
     }
     #recent_posts .posts_grid {
         grid-template-columns: repeat(auto-fit, 370px);
@@ -1172,10 +1164,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    #latest_projects .projects_grid {
-        grid-template-columns: repeat(2, 370px);
-        width: fit-content;
-    }
     #latest_projects .button {
         margin-bottom: 20px;
     }
