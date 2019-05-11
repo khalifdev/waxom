@@ -10,25 +10,94 @@
     }
     .cart_search {
         order: 2;
+        margin-right: 15px;
     }
-    header .menu__icon {
-        display: inline-block;
-    }
-    .menu__links {
-        position: fixed;
-        display: none;
-        top: -15px;
-        left: 55px;
-        margin-top: 52px;
-        //    background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-        overflow: auto;
-    }
-    .menu__links-item {
-        display: block;
-        padding: 10px 0;
-        text-align: center;
-        color: #fff;
+    .navbar {
+        padding: 0;
+        .menu__icon {
+            display: inline-block;
+            width: 45px;
+            height: 35px;
+            margin-left: 15px;
+            position: relative;
+            cursor: pointer;
+            span {
+                display: block;
+                position: absolute;
+                height: 9px;
+                width: 100%;
+                background: #fff;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+            }
+            span:nth-child(1) {
+                top: 0px;
+            }
+            span:nth-child(2),
+            span:nth-child(3) {
+                top: 13px;
+            }
+            span:nth-child(4) {
+                top: 26px;
+            }
+        }
+        .menu__links {
+            width: 100%;
+            height: 100vh;
+            top: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 3;
+            overflow: auto;
+            display: grid;
+            position: fixed;
+            left: -100%;
+            transition: .25s ease-in-out;
+            //trasform: translateX(-100vh);
+        }
+        .menu.menu_state_open {
+            .menu__icon {
+                z-index: 4;
+                position: fixed;
+                top: 50px;
+                span:nth-child(1) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+                span:nth-child(2) {
+                    transform: rotate(45deg);
+                }
+                span:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+                span:nth-child(4) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+
+            }
+            .menu__links {
+                position: fixed;
+                left: 0;
+                transition: .25s ease-in-out;
+                .menu__links-item {
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                    color: #fff;
+                    outline: 1px solid #fff;
+                    font-family: Montserrat;
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 90px;
+                }
+            }
+
+        }
     }
     header .slide .slide-caption {
         max-width: 80%;

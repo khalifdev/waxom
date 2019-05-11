@@ -18,9 +18,11 @@ function initiate() {
     media = document.getElementById('media');
     //получаем объект кнопки play
     play = document.getElementById('play_button');
-    size_box = document.getElementById('size');
     //вешаем обработчик события click на кнопку play/pause
     play.addEventListener('click', playPauseClick);
+
+    size_box = document.getElementById('size');
+
     left_btn = document.getElementById('bracket_left');
     right_btn = document.getElementById('bracket_right');
 }
@@ -31,8 +33,8 @@ function status() {
     //если просмотр не закончен
     if (!media.ended) {
         //получаем сколько уже просмотрено в процентах
-        var size = media.currentTime.toTimeString();
-        size_box.innerHTML = size;
+        //var size = media.currentTime.toTimeString();
+        //size_box.innerHTML = size;
     }
 }
 /**
