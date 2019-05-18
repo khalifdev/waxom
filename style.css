@@ -1166,13 +1166,14 @@ footer .copyright .right {
   .navbar .menu__links {
     width: 100%;
     height: 100vh;
-    top: 0;
     background-color: #83684d;
     z-index: 0;
     overflow: auto;
-    position: fixed;
+    position: absolute;
+    top: -40px;
+    padding-top: 15vh;
     opacity: 0;
-    transition: 0.25s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .navbar .menu__links .menu__links-item {
     display: block;
@@ -1182,10 +1183,6 @@ footer .copyright .right {
     font-family: Montserrat;
     font-weight: 300;
     font-size: 18px;
-  }
-  .navbar .menu.menu_state_open .menu__icon {
-    position: fixed;
-    top: 50px;
   }
   .navbar .menu.menu_state_open .menu__icon span:nth-child(1) {
     top: 18px;
@@ -1204,10 +1201,8 @@ footer .copyright .right {
     left: 50%;
   }
   .navbar .menu.menu_state_open .menu__links {
-    position: fixed;
-    padding-top: 15vh;
     opacity: 1;
-    transition: 0.25s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   header .slide {
     background-size: cover;
