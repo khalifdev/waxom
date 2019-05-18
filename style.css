@@ -1165,18 +1165,27 @@ footer .copyright .right {
   }
   .navbar .menu__links {
     width: 100%;
-    top: 100px;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 3;
+    height: 100vh;
+    top: 0;
+    background-color: #83684d;
+    z-index: 0;
     overflow: auto;
-    display: grid;
     position: fixed;
-    left: -100%;
+    opacity: 0;
     transition: 0.25s ease-in-out;
-    trasform: translateX(-100vh);
   }
-  .navbar .menu__links .menu__links-item .extra-item {
+  .navbar .menu__links .menu__links-item {
     display: block;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .navbar .menu.menu_state_open .menu__icon {
+    position: fixed;
+    top: 50px;
   }
   .navbar .menu.menu_state_open .menu__icon span:nth-child(1) {
     top: 18px;
@@ -1195,19 +1204,10 @@ footer .copyright .right {
     left: 50%;
   }
   .navbar .menu.menu_state_open .menu__links {
-    position: absolute;
-    left: 0;
+    position: fixed;
+    padding-top: 15vh;
+    opacity: 1;
     transition: 0.25s ease-in-out;
-  }
-  .navbar .menu.menu_state_open .menu__links .menu__links-item {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    outline: 1px solid #fff;
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 15px;
   }
   header .slide {
     background-size: cover;
