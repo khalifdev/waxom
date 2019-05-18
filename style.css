@@ -1167,10 +1167,10 @@ footer .copyright .right {
     width: 100%;
     height: 100vh;
     background-color: #83684d;
-    z-index: 0;
     overflow: auto;
     position: absolute;
     top: -40px;
+    left: -100%;
     padding-top: 15vh;
     opacity: 0;
     transition: 0.4s ease-in-out;
@@ -1201,6 +1201,7 @@ footer .copyright .right {
     left: 50%;
   }
   .navbar .menu.menu_state_open .menu__links {
+    left: 0;
     opacity: 1;
     transition: 0.4s ease-in-out;
   }
@@ -1314,6 +1315,14 @@ footer .copyright .right {
   }
   footer .info .footer_grid {
     grid-template-columns: 1fr;
+  }
+}
+@media all and (orientation: landscape) {
+  header .slide .slide-caption h2 {
+    margin-top: 50px;
+  }
+  header .slide .slide-caption h3 {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
