@@ -32,9 +32,12 @@ function initiate() {
 function status() {
     //если просмотр не закончен
     if (!media.ended) {
-        //получаем сколько уже просмотрено в процентах
-        //var size = media.currentTime.toTimeString();
-        //size_box.innerHTML = size;
+        //получаем сколько уже просмотрено в секундах
+        var size = media.currentTime.toFixed(0); // округлили до целых
+        // вывод в формате 0:00
+        var s = size % 60;
+        size_box.innerHTML = Math.floor(size / 60) + ':' + (s < 10 ? '0' : '') + s;
+
     }
 }
 /**
@@ -45,10 +48,17 @@ function playPauseClick() {
     if (!media.paused && !media.ended) {
         //ставим видео на паузу
         media.pause();
+        play.style.background = 'url(img/play.png)';
     }
     else {
         //запускаем видеозапись
         media.play();
+        // чуть-чуть погодя меняем стиль отображения (смещаем фокус влево)
+        setTimeout(() => {
+            media.style.objectPosition = '0';
+            play.style.background = 'url(img/pause.png)';
+        },200);
+        //вызываем секундомер под видео
         setInterval(status, 1000);
     }
 }
@@ -74,7 +84,7 @@ $(document).ready(function () {
         $('.post' + n).addClass('hov hov'+n);
     });
     /**
- * Функция для меню (бургер) - скопировал из другого проекта
+ * Функция для меню (бургер)
  */   
     (function($){
       $(function() {

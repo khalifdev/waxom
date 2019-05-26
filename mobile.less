@@ -1,17 +1,18 @@
-
-@media all and (orientation: landscape){
-  header {
-    .slide .slide-caption {
-      h2 {
-        margin-top: 50px;
-      }
-      h3 {
-        display: none;
-      }
+@media screen and (orientation: landscape) and (max-height: 576px){
+    header {
+        .slide .slide-caption {
+            h2 {
+                margin-top: 50px;
+                font-size: 27px;
+            }
+            h3 {
+                display: none;
+            }
+        }
     }
-  }
 }
-@media screen and (max-width: 576px) {
+
+@media only screen and (max-width : 576px) {
 
     .nav p {
         display: none;
