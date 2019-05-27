@@ -24,9 +24,9 @@ p {
     font-weight: 300;
     line-height: 28px;
 }
-
+// Стиль для контейнера лого
 .logo {
-    width: 185px;
+    width: 188px;
     height: 56px;
     img {
         float: left;
@@ -39,11 +39,11 @@ p {
         line-height: 56px;
     }
 }
-
+// Ссылка, содержащая контейнер лого
 .logoref {
     text-decoration: none !important;
 }
-
+// Типовой контейнер в секциях
 .container {
     height: inherit;
     max-width: 1170px;
@@ -104,29 +104,11 @@ header {
     .menu__links-item:hover {
         color: #c7b29a;
     }
-    .menu__links-item .extra-item {
-        display: none;
-    }
-    // Иконка меню, которая появляется при max-width: 992px
+    // Иконка меню, которая появляется при width < 992px
     .menu__icon {
         display: none;
     }
-
-
-    //    .menu li {
-    //        display: inline-block;
-    //    }
-    //    .menu li a {
-    //        font-family: Montserrat;
-    //        font-size: 14px;
-    //        font-weight: 300;
-    //        color: #fff;
-    //        text-decoration: none;
-    //        margin-right: 30px;
-    //    }
-    //    .menu li a:hover {
-    //        color: #c7b29a;
-    //    }
+    // Иконка корзины
     #cart {
         display: inline-block;
         width: 18px;
@@ -134,15 +116,18 @@ header {
         background: url(icons/icon-cart.png);
         margin: 0 20px;
     }
+    // Иконка поиска
     #search {
         display: inline-block;
         width: 24px;
         height: 24px;
         background: url(icons/icon-search.png);
     }
+    // слайд
     .slide {
         height: 1024px;
         background: url(img/slide_bg_1.jpg);
+        // текст с кнопокой на слайде
         .slide-caption {
             color: #fff;
             max-width: 590px;
@@ -169,6 +154,7 @@ header {
             }
         }
     }
+    // Кнопки листания слайдера
     .contr-prev,
     .contr-next {
         width: 16%;
@@ -177,6 +163,7 @@ header {
     .contr-next:hover .next_br {
         border-color: #998675;
     }
+    // Угловые скобки по бокам слайдера
     .prev_br,
     .next_br {
         display: block;
@@ -190,6 +177,7 @@ header {
     .next_br {
         transform: rotate(135deg);
     }
+    // Кружки внизу слайдера (индикаторы)
     .carousel_ind {
         z-index: 2;
         li {
@@ -206,15 +194,33 @@ header {
         border: 2px solid #d3c1ad;
     }
 }
-
+// Секция Сервисы
 #services {
     min-height: 374px;
     .grid-columns {
         padding-top: 40px;
         display: grid;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         margin: 0 auto;
+        // Столбик с карандашом
+        .pencil {
+            -ms-grid-column: 1;
+        }
+        // Столбик со слоями
+        .dev {
+            -ms-grid-column: 2;
+        }
+        // Столбик с шестерёнкой
+        .custom {
+            -ms-grid-column: 3;
+        }
+        // Столбик с папкой
+        .market {
+            -ms-grid-column: 4;
+        }
         i {
             font-size: 49px;
             color: #555555;
@@ -229,6 +235,7 @@ header {
         p {
             padding: 0 15px;
         }
+        // Текст до наведения
         p::after {
             content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.';
             font-family: Montserrat;
@@ -255,6 +262,7 @@ header {
         .column:hover hr {
             background-color: #c7b299;
         }
+        // Текст после наведения
         .column:hover p::after {
             content: 'Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.';
         }
@@ -284,7 +292,7 @@ header {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-
+// Анимация для карандаша
 /**
  * ----------------------------------------
  * animation shake-horizontal
@@ -348,7 +356,7 @@ header {
         transform: translateX(-8px);
     }
 }
-
+// Анимация для слоёв
 @-webkit-keyframes bounce-top {
     0% {
         -webkit-transform: translateY(-45px);
@@ -454,37 +462,7 @@ header {
         opacity: 1;
     }
 }
-
-@-webkit-keyframes flip-scale-up-hor {
-    0% {
-        -webkit-transform: scale(1) rotateX(0);
-        transform: scale(1) rotateX(0);
-    }
-    50% {
-        -webkit-transform: scale(2.5) rotateX(-90deg);
-        transform: scale(2.5) rotateX(-90deg);
-    }
-    100% {
-        -webkit-transform: scale(1) rotateX(-180deg);
-        transform: scale(1) rotateX(-180deg);
-    }
-}
-
-@keyframes flip-scale-up-hor {
-    0% {
-        -webkit-transform: scale(1) rotateX(0);
-        transform: scale(1) rotateX(0);
-    }
-    50% {
-        -webkit-transform: scale(2.5) rotateX(-90deg);
-        transform: scale(2.5) rotateX(-90deg);
-    }
-    100% {
-        -webkit-transform: scale(1) rotateX(-180deg);
-        transform: scale(1) rotateX(-180deg);
-    }
-}
-
+// Секция со скринами браузеров
 #ideas {
     min-height: 700px;
     background-color: #fbfaf8;
@@ -519,13 +497,9 @@ header {
         #center_browser:hover {
             cursor: pointer;
         }
-        #right_browser:hover #center_browser {
-            transform: translateY(-15px) scale(0.85);
-            transition-duration: 0.5s;
-        }
     }
 }
-
+// Градиенты в секциях
 #wp_theme,
 #stat {
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -534,7 +508,7 @@ header {
     background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 }
-
+// Секция WordPress Theme
 #wp_theme {
     min-height: 150px;
     .wp_theme_caption {
@@ -561,7 +535,7 @@ header {
         float: right;
     }
 }
-
+// Секция Our Latest Projects
 #latest_projects {
     min-height: 1130px;
     .latest_proj_caption {
@@ -571,6 +545,7 @@ header {
         .projects_filter {
             padding-left: 0;
         }
+        // Кнопки фильтра
         li {
             display: inline-block;
             height: 32px;
@@ -601,14 +576,18 @@ header {
             color: #fff;
         }
     }
+    // Сетка проектов
     .projects_grid {
         display: grid;
         grid-template-columns: repeat(3, 370px);
+        display: -ms-grid;
+        -ms-grid-columns: 370px 370px 370px;
         grid-gap: 30px;
         margin: 0 auto 40px;
         .project {
             height: 337px;
             position: relative;
+            // Ссылка и лупа
             .ctrl_icons {
                 visibility: hidden;
                 position: absolute;
@@ -625,6 +604,7 @@ header {
                     color: #c7b299;
                 }
             }
+            // Описание под  картинкой проекта
             .project_txt {
                 display: block;
                 width: 370px;
@@ -673,6 +653,7 @@ header {
         .proj11 {
             background: url(img/photo11.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 1;
         }
         .proj11:hover {
             background: #2f2f2f url(img/photo11.jpg) no-repeat;
@@ -682,6 +663,7 @@ header {
         .proj12 {
             background: url(img/photo12.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 2;
         }
         .proj12:hover {
             background: #2f2f2f url(img/photo12.jpg) no-repeat;
@@ -691,6 +673,7 @@ header {
         .proj13 {
             background: url(img/photo13.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 3;
         }
         .proj13:hover {
             background: #2f2f2f url(img/photo13.jpg) no-repeat;
@@ -700,6 +683,8 @@ header {
         .proj21 {
             background: url(img/photo21.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
         }
         .proj21:hover {
             background: #2f2f2f url(img/photo21.jpg) no-repeat;
@@ -709,6 +694,8 @@ header {
         .proj22 {
             background: url(img/photo22.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
         }
         .proj22:hover {
             background: #2f2f2f url(img/photo22.jpg) no-repeat;
@@ -718,6 +705,8 @@ header {
         .proj23 {
             background: url(img/photo23.jpg) no-repeat;
             background-position-x: center;
+            -ms-grid-column: 3;
+            -ms-grid-row: 2;
         }
         .proj23:hover {
             background: #2f2f2f url(img/photo23.jpg) no-repeat;
@@ -729,7 +718,7 @@ header {
         margin: 0 auto 20px;
     }
 }
-
+// Секция с видео
 #presentation {
     height: 705px;
     overflow: hidden;
@@ -738,6 +727,7 @@ header {
         height: 100%;
         object-fit: cover;
     }
+    // Текст над видео
     .presentation_txt {
         margin: -400px auto 0;
         z-index: 1;
@@ -775,7 +765,7 @@ header {
         }
     }
 }
-
+// Секция с мобильником
 #mobile_devices {
     background-color: #fbfaf8;
     min-height: 695px;
@@ -802,7 +792,7 @@ header {
         margin-left: 50px;
     }
 }
-
+// Секция со статистикой (лайки, чашки кофе...)
 #stat {
     height: 300px;
     .flex-columns {
@@ -843,7 +833,7 @@ header {
         }
     }
 }
-
+// Секция Recent Posts
 #recent_posts {
     min-height: 753px;
     .posts_caption {
@@ -851,14 +841,18 @@ header {
         margin: 0 auto 40px;
         padding: 40px 15px 0;
     }
+    // Сетка постов Recent Posts
     .posts_grid {
         display: grid;
         grid-template-columns: repeat(3, 370px);
+        display: -ms-grid;
+        -ms-grid-columns: 370px 370px 370px;
         gap: 30px;
         margin-bottom: 40px;
         .post {
             min-height: 220px;
             position: relative;
+            // Блок с днём даты
             .DD {
                 display: block;
                 position: inherit;
@@ -875,6 +869,7 @@ header {
                 font-weight: 300;
                 line-height: 35px;
             }
+            // Блок с месяцем
             .MM {
                 display: block;
                 position: inherit;
@@ -891,6 +886,7 @@ header {
                 font-weight: 400;
                 line-height: 25px;
             }
+            // Описание под картинкой поста
             .post_txt {
                 display: block;
                 width: 370px;
@@ -920,6 +916,7 @@ header {
                 }
             }
         }
+        // Класс hov добавляется в JavaScript
         .hov .post_txt {
             background-color: #362f2d;
             h6 {
@@ -937,6 +934,7 @@ header {
         }
         .post1 {
             background: url(img/legs.jpg) no-repeat;
+            -ms-grid-column: 1;
         }
         .hov1 {
             background: #2f2f2f url(img/legs.jpg) no-repeat;
@@ -944,6 +942,7 @@ header {
         }
         .post2 {
             background: url(img/laptop.jpg) no-repeat;
+            -ms-grid-column: 2;
         }
         .hov2 {
             background: #2f2f2f url(img/laptop.jpg) no-repeat;
@@ -951,12 +950,14 @@ header {
         }
         .post3 {
             background: url(img/ship.jpg) no-repeat;
+            -ms-grid-column: 3;
         }
         .hov3 {
             background: #2f2f2f url(img/ship.jpg) no-repeat;
             background-blend-mode: overlay;
         }
     }
+    // кнопки переключения постов в Recent Posts
     .ctrl_brackets {
         #bracket_left,
         #bracket_right {
@@ -984,7 +985,7 @@ header {
         }
     }
 }
-
+// Секция с брэндами
 #brands {
     min-height: 489px;
     background: url(img/brands_bg.jpg) no-repeat;
@@ -993,7 +994,7 @@ header {
         padding: 100px 20px 20px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         a {
             padding-top: 30px;
@@ -1014,9 +1015,23 @@ footer {
         min-height: 508px;
         .footer_grid {
             display: grid;
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr;
             grid-template-columns: repeat(4, 1fr);
             text-align: left;
             gap: 25px;
+            .column1 {
+                -ms-grid-column: 1;
+            }
+            .column2 {
+                -ms-grid-column: 2;
+            }
+            .column3 {
+                -ms-grid-column: 3;
+            }
+            .column4 {
+                -ms-grid-column: 4;
+            }
             .column1 > p {
                 color: #545454;
                 font-size: 14px;
@@ -1042,14 +1057,12 @@ footer {
                 font-family: Raleway;
                 color: #ffffff;
                 font-size: 24px;
-                /* Приближение из-за подстановки шрифтов */
                 font-weight: 700;
             }
             span {
                 font-family: Montserrat;
                 color: #363636;
                 font-size: 12px;
-                /* Приближение из-за подстановки шрифтов */
                 font-weight: 300;
                 line-height: 20px;
             }
@@ -1131,12 +1144,6 @@ footer {
         width: 770px;
         margin: 0 auto 40px;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    //#latest_projects .button {
-    //    margin-bottom: 20px;
-    //}
 }
 
 @import "tablet.less";

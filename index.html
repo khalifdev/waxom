@@ -5,83 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>Waxom PSD Template</title>
+    <!-- Стили для слайдера -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Стили для иконных шрифтов -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<!--
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
--->
+    <!-- Мои стили -->
     <link rel="stylesheet" href="style.css"> </head>
 
 <body>
     <header>
-       <div class="nav">
-                         <div class="navbar">   <a href="#" class="logoref"><div class="logo"><img src="img/logo.png" alt="logo">
-                                <p>Waxom</p>
-                            </div></a>
-                            <div class="menu">
-      <div class="menu__links">
-        <a class="menu__links-item" href="#">Home</a>
-        <a class="menu__links-item" href="#">About Us</a>
-        <a class="menu__links-item" href="#">Portfolio</a>
-        <a class="menu__links-item" href="#">Features</a>
-        <a class="menu__links-item" href="#">Blog</a>
-        <a class="menu__links-item" href="#">Pricing</a>
-        <a class="menu__links-item" href="#">Shortcodes</a>
-        <a class="menu__links-item" href="#">Contact</a>
-      </div>
-      <div class="menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-      </div>
-    </div>
-<!--
-                            <ul class="menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Shortcodes</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
--->
-                            <div class="cart_search"><a href="#" id="cart"></a>
-                            <a href="#" id="search"></a></div>
-                            </div>
-                        </div>
+        <div class="nav">
+            <div class="navbar">
+               <!-- Логотип-ссылка -->
+                <a href="#" class="logoref">
+                    <div class="logo"><img src="img/logo.png" alt="logo">
+                        <p>Waxom</p>
+                    </div>
+                </a>
+                <!-- Меню -->
+                <div class="menu">
+                    <div class="menu__links"> <a class="menu__links-item" href="#">Home</a> <a class="menu__links-item" href="#">About Us</a> <a class="menu__links-item" href="#">Portfolio</a> <a class="menu__links-item" href="#">Features</a> <a class="menu__links-item" href="#">Blog</a> <a class="menu__links-item" href="#">Pricing</a> <a class="menu__links-item" href="#">Shortcodes</a> <a class="menu__links-item" href="#">Contact</a> </div>
+                    <!-- Меню-бургер -->
+                    <div class="menu__icon"> <span></span> <span></span> <span></span> <span></span> </div>
+                </div>
+                <div class="cart_search">
+                    <a href="#" id="cart"></a>
+                    <a href="#" id="search"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Слайдер -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+           <!-- Кружки внизу слайдера -->
             <ol class="carousel-indicators carousel_ind">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+               <!-- Слайд 1 -->
                 <div class="carousel-item slide active">
                     <div class="container">
-                        
                         <div class="slide-caption">
                             <h3>Unique and Modern Design</h3>
                             <h2>Portfolio PSD Template</h2>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p><a href="#" class="button">   GET STARTED</a></div>
                     </div>
                 </div>
+                <!-- Слайд 2 -->
                 <div class="carousel-item slide">
                     <div class="container">
-                        
                         <div class="slide-caption">
                             <h3>Unique and Modern Design</h3>
                             <h2>Portfolio PSD Template</h2>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p><a href="#" class="button">   GET STARTED</a>
-                        </div>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p><a href="#" class="button">   GET STARTED</a> </div>
                     </div>
                 </div>
+                <!-- Слайд 3 -->
                 <div class="carousel-item slide">
                     <div class="container">
-                        
                         <div class="slide-caption">
                             <h3>Unique and Modern Design</h3>
                             <h2>Portfolio PSD Template</h2>
@@ -89,37 +71,36 @@
                     </div>
                 </div>
             </div>
+            <!-- Кнопки листания слайдера -->
             <a class="carousel-control-prev contr-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon prev_br" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
             <a class="carousel-control-next contr-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon next_br" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
         </div>
     </header>
     <main>
+       <!-- Секция services -->
         <section id="services">
             <div class="container">
                 <div class="grid-columns">
                     <div class="column pencil"><i class="fas fa-pencil-alt"></i>
                         <h5>Web &amp; App Design</h5>
                         <p></p>
-                        <hr>
-                    </div>
+                        <hr> </div>
                     <div class="column dev"><i class="fas fa-layer-group"></i>
                         <h5>Development</h5>
                         <p></p>
-                        <hr>
-                    </div>
+                        <hr> </div>
                     <div class="column custom"><i class="fas fa-cog"></i>
                         <h5>Customization</h5>
                         <p></p>
-                        <hr>
-                    </div>
+                        <hr> </div>
                     <div class="column market"><i class="fas fa-folder-open"></i>
                         <h5>Marketing</h5>
                         <p></p>
-                        <hr>
-                    </div>
+                        <hr> </div>
                 </div>
             </div>
         </section>
+        <!-- Секция с браузерами -->
         <section id="ideas">
             <div class="ideas_caption">
                 <h4>Waxom is Realization of your Ideas.</h4>
@@ -127,6 +108,7 @@
             </div>
             <div class="ideas_scrins"><img src="img/browser-left.jpg" alt="left_browser" id="left_browser"><img src="img/browser-right.jpg" alt="right_browser" id="right_browser"><img src="img/browser-center.jpg" alt="center_browser" id="center_browser"></div>
         </section>
+        <!-- Секция WordPress Theme -->
         <section id="wp_theme">
             <div class="container">
                 <div class="wp_theme_caption">
@@ -134,6 +116,7 @@
                     <p>Don't Forget to Rate the Template. Thanks so much!</p>
                 </div><a href="#" class="button">   PURCHASE NOW</a></div>
         </section>
+        <!-- Секция Latest Projects -->
         <section id="latest_projects">
             <div class="container">
                 <div class="latest_proj_caption">
@@ -147,49 +130,212 @@
                         <li><a href="#">Photography</a></li>
                     </ul>
                 </div>
-                <div class="projects_grid"><div class="project proj11"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Claritas Etiam Processus</h6><p>Photography, Nature</p></div></div>
-                <div class="project proj12"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Quam Nutamus Farum</h6><p>Graphic Design, Mock-Up</p></div></div>
-                <div class="project proj13"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Usus Legentis Videntur</h6><p>Photography, Holiday</p></div></div>
-                <div class="project proj21"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Claritas Etiam Processus</h6><p>Photography, Nature</p></div></div>
-                <div class="project proj22"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Quam Nutamus Farum</h6><p>Graphic Design, Mock-Up</p></div></div>
-                <div class="project proj23"><div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div><div class="project_txt"><div class="angle"></div><h6>Usus Legentis Videntur</h6><p>Photography, Holiday</p></div></div>
-                </div>
-            <a href="#" class="button">LOAD MORE</a></div>
+                <div class="projects_grid">
+                    <div class="project proj11">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="project proj12">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Quam Nutamus Farum</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="project proj13">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Usus Legentis Videntur</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                    <div class="project proj21">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="project proj22">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Quam Nutamus Farum</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="project proj23">
+                        <div class="ctrl_icons"><i class="fas fa-link"></i><i class="fas fa-search-plus"></i></div>
+                        <div class="project_txt">
+                            <div class="angle"></div>
+                            <h6>Usus Legentis Videntur</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                </div> <a href="#" class="button">LOAD MORE</a></div>
         </section>
-        <section id="presentation"><video id="media" src="video/Computer_guy.mp4" poster="img/poster.jpg" preload="none" loop></video><div class="presentation_txt"><button id="play_button"></button><h4>Waxom Video Presentation</h4><p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-        <span id="size">0:00</span>
-        </div></section>
-        <section id="mobile_devices"><div class="container"><img src="img/iPhone_in_hand.png" alt=""><div class="mobdev_desc"><h4>Excellent for Mobile Devices.</h4><p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p><ul><li>Nam liber tempor cum soluta nobis eleifend option;</li>
-        <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-        <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-        <li>Investigationes demonstraverunt lectores</li></ul></div></div></section>
-        <section id="stat"><div class="flex-columns"><div class="column clients"><object data="icons/clients.svg" width="44" height="44" type="image/svg+xml"></object><span>3587</span><p>SATISFIED CLIENTS</p><hr></div><div class="column cups"><object data="icons/cup.svg" width="44" height="44" type="image/svg+xml"></object><span>207</span><p>CUPS OF COFFEE</p><hr></div><div class="column blogs"><object data="icons/msg.svg" width="44" height="44" type="image/svg+xml"></object><span>2500</span><p>BLOG POSTS</p><hr></div><div class="column likes"><object data="icons/heart.svg" width="44" height="44" type="image/svg+xml"></object><span>873</span><p>LIKES</p><hr></div><div class="column launch"><object data="icons/lunch.svg" width="44" height="44" type="image/svg+xml"></object><span>900</span><p>WE LAUNCHED</p><hr></div></div></section>
-        <section id="recent_posts"><div class="container">
+        <!-- Секция с видео -->
+        <section id="presentation">
+            <video id="media" src="video/Computer_guy.mp4" poster="img/poster.jpg" preload="none" loop></video>
+            <div class="presentation_txt">
+                <button id="play_button"></button>
+                <h4>Waxom Video Presentation</h4>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p> <span id="size">0:00</span> </div>
+        </section>
+        <!-- Секция c мобильником -->
+           <section id="mobile_devices">
+            <div class="container"><img src="img/iPhone_in_hand.png" alt="">
+                <div class="mobdev_desc">
+                    <h4>Excellent for Mobile Devices.</h4>
+                    <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                    <ul>
+                        <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+                        <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                        <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                        <li>Investigationes demonstraverunt lectores</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Секция stat -->
+        <section id="stat">
+            <div class="flex-columns">
+                <div class="column clients">
+                    <object data="icons/clients.svg" width="44" height="44" type="image/svg+xml"></object><span>3587</span>
+                    <p>SATISFIED CLIENTS</p>
+                    <hr>
+                </div>
+                <div class="column cups">
+                    <object data="icons/cup.svg" width="44" height="44" type="image/svg+xml"></object><span>207</span>
+                    <p>CUPS OF COFFEE</p>
+                    <hr>
+                </div>
+                <div class="column blogs">
+                    <object data="icons/msg.svg" width="44" height="44" type="image/svg+xml"></object><span>2500</span>
+                    <p>BLOG POSTS</p>
+                    <hr>
+                </div>
+                <div class="column likes">
+                    <object data="icons/heart.svg" width="44" height="44" type="image/svg+xml"></object><span>873</span>
+                    <p>LIKES</p>
+                    <hr>
+                </div>
+                <div class="column launch">
+                    <object data="icons/lunch.svg" width="44" height="44" type="image/svg+xml"></object><span>900</span>
+                    <p>WE LAUNCHED</p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <!-- Секция Recent Posts -->
+        <section id="recent_posts">
+            <div class="container">
                 <div class="posts_caption">
                     <h4>Recent Posts.</h4>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    
                 </div>
-                <div class="posts_grid"><div class="post post1 hov hov1">
-                <span class="DD">30</span><span class="MM">Sep.</span><div class="post_txt"><h6>Lorem ipsum dolor sit amet</h6><p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div></div>
-                <div class="post post2"><span class="DD">30</span><span class="MM">Sep.</span><div class="post_txt"><h6>Lorem ipsum dolor sit amet</h6><p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div></div>
-                <div class="post post3"><span class="DD">30</span><span class="MM">Sep.</span><div class="post_txt"><h6>Lorem ipsum dolor sit amet</h6><p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div></div>                
+                <div class="posts_grid">
+                    <div class="post post1 hov hov1"> <span class="DD">30</span><span class="MM">Sep.</span>
+                        <div class="post_txt">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div>
+                    </div>
+                    <div class="post post2"><span class="DD">30</span><span class="MM">Sep.</span>
+                        <div class="post_txt">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div>
+                    </div>
+                    <div class="post post3"><span class="DD">30</span><span class="MM">Sep.</span>
+                        <div class="post_txt">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div>
+                    </div>
                 </div>
-            <div class="ctrl_brackets"><button id="bracket_left"></button>&nbsp;<button id="bracket_right"></button></div></div><div class="clearbox"></div></section>
-            <section id="brands"><div class="container"><a href="#"><img src="img/logo-01.png" alt="logo1"></a><a href="#"><img src="img/logo-02.png" alt="logo2"></a><a href="#"><img src="img/logo-03.png" alt="logo3"></a><a href="#"><img src="img/logo-04.png" alt="logo4"></a></div></section>
+                <div class="ctrl_brackets">
+                    <button id="bracket_left"></button>&nbsp;
+                    <button id="bracket_right"></button>
+                </div>
+            </div>
+            <div class="clearbox"></div>
+        </section>
+        <!-- Секция Брэнды -->
+        <section id="brands">
+            <div class="container">
+                <a href="#"><img src="img/logo-01.png" alt="logo1"></a>
+                <a href="#"><img src="img/logo-02.png" alt="logo2"></a>
+                <a href="#"><img src="img/logo-03.png" alt="logo3"></a>
+                <a href="#"><img src="img/logo-04.png" alt="logo4"></a>
+            </div>
+        </section>
     </main>
-    <footer><div class="info"><div class="container"><div class="footer_grid"><div class="column1"><a href="#" class="logoref"><div class="logo"><img src="img/logo.png" alt="logo">
+    <!-- Футер -->
+    <footer>
+        <div class="info">
+            <div class="container">
+                <div class="footer_grid">
+                    <div class="column1">
+                        <a href="#" class="logoref">
+                            <div class="logo"><img src="img/logo.png" alt="logo">
                                 <p>Waxom</p>
-        </div></a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div><div class="column2"><h5>Recent Posts</h5><a href="#"><div><span>September 08, 2015</span><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p><hr></div></a><a href="#"><div><span>September 08, 2015</span><p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p><hr></div></a><a href="#"><div><span>September 08, 2015</span><p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p></div></a></div><div class="column3"><h5>Our Twitter</h5><div><p><b>@waxom</b> Cum soluta nobis eleifend option congue nihil imperdiet doming</p><span>3 mins ago</span><hr></div><div><p>Mirum est <b>#envato</b> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p><span>5 hours ago</span><hr></div><div><p>Soluta nobis option <a href="#" class="outref">bit.ly/1Hniso7</a></p><span>20 days ago</span></div></div><div class="column4"><h5>Dribbble Widget</h5><div class="pictures"><img src="img/mobiles.jpg" alt="mobiles"><img src="img/packet.jpg" alt="packet"><img src="img/book.jpg" alt="book"><img src="img/icons.jpg" alt="icons"></div></div></div></div></div><div class="copyright"><div class="container"><span class="left">Copyright &copy; 2015 <a href="#" class="outref">Waxom</a></span>
-                            <span class="left"><a href="#">Privacy Policy</a></span>
-                            <span class="left"><a href="#">FAQ</a></span>
-                            <span class="left"><a href="#">Support</a></span>
-                            <span class="right">Designed by <a href="#" class="outref">ThemeFire</a></span><span class="right">Only on <a href="#" class="outref">Envato Market</a></span></div></div></footer>
-<!--    Скрипты для работы слайдера из bootstrap 4-->
+                            </div>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p><a href="#">Read more <i class="fas fa-caret-right"></i></a></div>
+                    <div class="column2">
+                        <h5>Recent Posts</h5>
+                        <a href="#">
+                            <div><span>September 08, 2015</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                                <hr>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div><span>September 08, 2015</span>
+                                <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                                <hr>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div><span>September 08, 2015</span>
+                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column3">
+                        <h5>Our Twitter</h5>
+                        <div>
+                            <p><b>@waxom</b> Cum soluta nobis eleifend option congue nihil imperdiet doming</p><span>3 mins ago</span>
+                            <hr>
+                        </div>
+                        <div>
+                            <p>Mirum est <b>#envato</b> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p><span>5 hours ago</span>
+                            <hr>
+                        </div>
+                        <div>
+                            <p>Soluta nobis option <a href="#" class="outref">bit.ly/1Hniso7</a></p><span>20 days ago</span></div>
+                    </div>
+                    <div class="column4">
+                        <h5>Dribbble Widget</h5>
+                        <div class="pictures"><img src="img/mobiles.jpg" alt="mobiles"><img src="img/packet.jpg" alt="packet"><img src="img/book.jpg" alt="book"><img src="img/icons.jpg" alt="icons"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Раздел копирайтов -->
+           <div class="copyright">
+            <div class="container"><span class="left">Copyright &copy; 2015 <a href="#" class="outref">Waxom</a></span> <span class="left"><a href="#">Privacy Policy</a></span> <span class="left"><a href="#">FAQ</a></span> <span class="left"><a href="#">Support</a></span> <span class="right">Designed by <a href="#" class="outref">ThemeFire</a></span><span class="right">Only on <a href="#" class="outref">Envato Market</a></span></div>
+        </div>
+    </footer>
+    <!-- Скрипты для работы слайдера из bootstrap 4-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!-- Мой скрипт -->
     <script src="script.js"></script>
 </body>
 

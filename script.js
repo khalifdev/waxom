@@ -1,3 +1,4 @@
+
 /** @var {object} media - объект видеозаписи*/
 var media;
 /** @var {object} play - кнопка play/pause */
